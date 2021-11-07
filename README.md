@@ -4,7 +4,7 @@
 
 ## Installation
 
-### Gradle
+Gradle
 </div>
 
 ```groovy
@@ -18,7 +18,7 @@ dependencies {
 ```
 <div align="center">
 
-### Maven
+Maven
 </div>
 
 ```xml
@@ -32,4 +32,16 @@ dependencies {
 	  <artifactId>hookdispatcher</artifactId>
     <version>1.0</version>
 </dependency>
+```
+
+<div align="center">
+
+## Usage
+</div>
+
+```java
+@Subscribe
+public void onEvent(Event event) {
+	System.out.println("Hey, I am working!");
+}
 ```
