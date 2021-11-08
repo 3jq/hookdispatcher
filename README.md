@@ -56,3 +56,7 @@ public class TestHandler {
 
 public class TestEvent {}
 ```
+
+## Performance
+
+Since when I was testing, it was doing 1 mil tasks for 7586 millis (the fastest, avg 8966)
