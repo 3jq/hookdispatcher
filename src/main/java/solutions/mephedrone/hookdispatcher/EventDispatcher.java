@@ -4,10 +4,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author yoursleep
@@ -30,7 +27,8 @@ public class EventDispatcher {
     }
 
     public void dispatch(@NotNull Object event) {
-        for (Map.Entry<Object, List<Method>> entry : registeredObjects.entrySet()) {
+        for (Iterator<Map.Entry<Object, List<Method>>> it = registeredObjects.entrySet().iterator(); it.hasNext(); ) {
+            Map.Entry<Object, List<Method>> entry = it.next();
             for (Method method : entry.getValue()) {
                 if (!method.getParameterTypes()[0].equals(event.getClass())) continue;
 
