@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.3jq:hookdispatcher:1.1'
+    implementation 'com.github.3jq:hookdispatcher:1.2'
 }
 ```
 <div align="center">
@@ -30,7 +30,7 @@ Maven
 <dependency>
     <groupId>com.github.3jq</groupId>
     <artifactId>hookdispatcher</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
 </dependency>
 ```
 
